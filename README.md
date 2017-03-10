@@ -18,3 +18,6 @@
 
 Currently it does the basic server environment checks based on `TYPO3 8.3`.  
 These pretty much apply to all version down to `TYPO3 6.2`
+
+## License
+GPLv2
