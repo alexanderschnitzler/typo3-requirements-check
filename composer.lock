@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "572c428cc63849fac16b53bae4f17903",
+    "content-hash": "e2978c86a7d2d37189b613436dbeb689",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -1545,16 +1545,16 @@
         },
         {
             "name": "typo3/cms-core",
-            "version": "v9.0.0",
+            "version": "v9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "e520d5a50e635ed6c83cc7f78fdf8c117d2e5f4f"
+                "reference": "2e9c051d79e1a3804d60441be47c1045363362bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/e520d5a50e635ed6c83cc7f78fdf8c117d2e5f4f",
-                "reference": "e520d5a50e635ed6c83cc7f78fdf8c117d2e5f4f",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/2e9c051d79e1a3804d60441be47c1045363362bd",
+                "reference": "2e9c051d79e1a3804d60441be47c1045363362bd",
                 "shasum": ""
             },
             "require": {
@@ -1609,7 +1609,7 @@
             "type": "typo3-cms-framework",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "9.0.x-dev"
+                    "dev-master": "9.1.x-dev"
                 },
                 "typo3/cms": {
                     "Package": {
@@ -1638,7 +1638,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1649,24 +1649,24 @@
             ],
             "description": "The core library of TYPO3.",
             "homepage": "https://typo3.org",
-            "time": "2017-12-12T16:48:22+00:00"
+            "time": "2018-01-30T15:31:12+00:00"
         },
         {
             "name": "typo3/cms-extbase",
-            "version": "v9.0.0",
+            "version": "v9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/extbase.git",
-                "reference": "6f16acd1c8b2b85ab1a9280aabcd1173c0a9934c"
+                "reference": "27c51535022ac657c8817285bfc3acb9f8d9a3f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/6f16acd1c8b2b85ab1a9280aabcd1173c0a9934c",
-                "reference": "6f16acd1c8b2b85ab1a9280aabcd1173c0a9934c",
+                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/27c51535022ac657c8817285bfc3acb9f8d9a3f6",
+                "reference": "27c51535022ac657c8817285bfc3acb9f8d9a3f6",
                 "shasum": ""
             },
             "require": {
-                "typo3/cms-core": "9.0.0"
+                "typo3/cms-core": "9.1.0"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -1677,7 +1677,7 @@
             "type": "typo3-cms-framework",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "9.0.x-dev"
+                    "dev-master": "9.1.x-dev"
                 },
                 "typo3/cms": {
                     "Package": {
@@ -1700,7 +1700,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1711,25 +1711,25 @@
             ],
             "description": "A framework to build extensions for TYPO3 CMS.",
             "homepage": "https://typo3.org",
-            "time": "2017-12-12T16:48:22+00:00"
+            "time": "2018-01-30T15:31:12+00:00"
         },
         {
             "name": "typo3/cms-fluid",
-            "version": "v9.0.0",
+            "version": "v9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/fluid.git",
-                "reference": "fb44b05b4fac835e9995cd909dae2fcb25d376a6"
+                "reference": "a28edc964a9211410f5e4f88210386ec00d0c9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/fluid/zipball/fb44b05b4fac835e9995cd909dae2fcb25d376a6",
-                "reference": "fb44b05b4fac835e9995cd909dae2fcb25d376a6",
+                "url": "https://api.github.com/repos/TYPO3-CMS/fluid/zipball/a28edc964a9211410f5e4f88210386ec00d0c9e6",
+                "reference": "a28edc964a9211410f5e4f88210386ec00d0c9e6",
                 "shasum": ""
             },
             "require": {
-                "typo3/cms-core": "9.0.0",
-                "typo3/cms-extbase": "9.0.0",
+                "typo3/cms-core": "9.1.0",
+                "typo3/cms-extbase": "9.1.0",
                 "typo3fluid/fluid": "^2.3"
             },
             "conflict": {
@@ -1741,7 +1741,7 @@
             "type": "typo3-cms-framework",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "9.0.x-dev"
+                    "dev-master": "9.1.x-dev"
                 },
                 "typo3/cms": {
                     "Package": {
@@ -1764,7 +1764,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1775,28 +1775,28 @@
             ],
             "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
             "homepage": "https://typo3.org",
-            "time": "2017-12-12T16:48:22+00:00"
+            "time": "2018-01-30T15:31:12+00:00"
         },
         {
             "name": "typo3/cms-install",
-            "version": "v9.0.0",
+            "version": "v9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/install.git",
-                "reference": "99696faec0dd0ba571ba4f85324757515c2f9934"
+                "reference": "344469b02c23ca085ee0c85cb431de66db41590d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/install/zipball/99696faec0dd0ba571ba4f85324757515c2f9934",
-                "reference": "99696faec0dd0ba571ba4f85324757515c2f9934",
+                "url": "https://api.github.com/repos/TYPO3-CMS/install/zipball/344469b02c23ca085ee0c85cb431de66db41590d",
+                "reference": "344469b02c23ca085ee0c85cb431de66db41590d",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "~3.1",
                 "symfony/finder": "^2.7 || ^3.0 || ^4.0",
-                "typo3/cms-core": "9.0.0",
-                "typo3/cms-extbase": "9.0.0",
-                "typo3/cms-fluid": "9.0.0"
+                "typo3/cms-core": "9.1.0",
+                "typo3/cms-extbase": "9.1.0",
+                "typo3/cms-fluid": "9.1.0"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -1807,7 +1807,7 @@
             "type": "typo3-cms-framework",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "9.0.x-dev"
+                    "dev-master": "9.1.x-dev"
                 },
                 "typo3/cms": {
                     "Package": {
@@ -1825,7 +1825,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -1836,7 +1836,7 @@
             ],
             "description": "The Install Tool mounted as the module Tools>Install in TYPO3.",
             "homepage": "https://typo3.org",
-            "time": "2017-12-12T16:48:22+00:00"
+            "time": "2018-01-30T15:31:12+00:00"
         },
         {
             "name": "typo3fluid/fluid",

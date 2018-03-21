@@ -11,7 +11,7 @@
     "GPL-2.0+"
   ],
   "require": {
-    "typo3/cms-install": "~9.0.0"
+    "typo3/cms-install": "~9.1.0"
   },
   "require-dev": {
     "symfony/var-dumper": "^4.0.6"
