@@ -2,22 +2,23 @@
 
 ## Minimum requirements (to run the check)
 
-`PHP >= 5.5.9`
+`git`
+`composer`
+`php (cli)`
 
 ## How to install?
 
-- `git clone https://github.com/alexanderschnitzler/typo3-requirements-check.git`
+- `git clone --branch TYPO3_8-7 https://github.com/alexanderschnitzler/typo3-requirements-check.git`
 - `cd typo3-requirements-check`
-- `composer install`
+- `composer install --no-plugins`
 
 ## How to use?
 
-`/usr/bin/env php index.php check`
+`/usr/bin/env php check.php`
 
 ## What does it check?
 
-Currently it does the basic server environment checks based on `TYPO3 8.3`.  
-These pretty much apply to all version down to `TYPO3 6.2`
+The script executes all checks that the TYPO3 install tool provides.
 
 ## License
 GPLv2

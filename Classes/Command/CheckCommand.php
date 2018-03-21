@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -11,7 +13,7 @@
  *
  * The TYPO3 project - inspiring people to share!
  */
-namespace TYPO3\CMS\Install\Command;
+namespace Schnitzler\TYPO3RequirementsCheck\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\FormatterHelper;
@@ -21,11 +23,10 @@ use TYPO3\CMS\Install\Status\StatusInterface;
 use TYPO3\CMS\Install\SystemEnvironment\Check;
 
 /**
- * Class TYPO3\CMS\Install\Command\CheckCommand
+ * Class Schnitzler\TYPO3RequirementsCheck\Command\CheckCommand
  */
 class CheckCommand extends Command
 {
-
     /**
      * @return void
      */
@@ -40,7 +41,7 @@ class CheckCommand extends Command
      *
      * @return int
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $statuus = (new Check())->getStatus();
 
@@ -93,16 +94,22 @@ class CheckCommand extends Command
         $output->writeln('  ' . implode('', $dots));
         $output->writeln('');
 
-        $output->writeln($formatter->formatSection('Errors', '', 'error'));
-        $output->writeln($formatter->formatBlock($errors, 'error'));
-        $output->writeln('');
+        if (count($errors) > 0) {
+            $output->writeln($formatter->formatSection('Errors', '', 'error'));
+            $output->writeln($formatter->formatBlock($errors, 'error'));
+            $output->writeln('');
+        }
 
-        $output->writeln($formatter->formatSection('Warning', '', 'comment'));
-        $output->writeln($formatter->formatBlock($warnings, 'comment'));
-        $output->writeln('');
+        if (count($warnings) > 0) {
+            $output->writeln($formatter->formatSection('Warning', '', 'comment'));
+            $output->writeln($formatter->formatBlock($warnings, 'comment'));
+            $output->writeln('');
+        }
 
-        $output->writeln($formatter->formatSection('OK', '', 'info'));
-        $output->writeln($formatter->formatBlock($oks, 'info'));
+        if (count($oks) > 0) {
+            $output->writeln($formatter->formatSection('OK', '', 'info'));
+            $output->writeln($formatter->formatBlock($oks, 'info'));
+        }
 
         return 0;
     }
