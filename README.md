@@ -8,7 +8,7 @@
 
 ## How to install?
 
-- `git clone --branch TYPO3_8-7 https://github.com/alexanderschnitzler/typo3-requirements-check.git`
+- `git clone --branch TYPO3_9-0 https://github.com/alexanderschnitzler/typo3-requirements-check.git`
 - `cd typo3-requirements-check`
 - `composer install --no-plugins`
 
