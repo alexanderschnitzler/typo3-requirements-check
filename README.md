@@ -2,15 +2,15 @@
 
 ## Minimum requirements (to run the check)
 
-`git`
-`composer`
-`php (cli)`
+* `git`
+* `composer`
+* `php (cli)`
 
 ## How to install?
 
-- `git clone --branch TYPO3_9-1 https://github.com/alexanderschnitzler/typo3-requirements-check.git`
-- `cd typo3-requirements-check`
-- `composer install --no-plugins`
+* `git clone --branch TYPO3_9-1 https://github.com/alexanderschnitzler/typo3-requirements-check.git`
+* `cd typo3-requirements-check`
+* `composer install --no-dev --no-plugins`
 
 ## How to use?
 
